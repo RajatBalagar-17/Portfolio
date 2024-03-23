@@ -1,0 +1,784 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: #282828; */
+}
+html,body{
+    line-height: 1.4;
+    font-weight: normal;
+    background-color: #282828;;
+}
+
+.image img{
+    width: 90px;
+    height: 90px;
+    clip-path: circle();
+    border-radius: 50%;
+    border: 9px solid #474747;
+    padding: 6px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 180px 100px 0 100px;
+    /* margin-top: 220px; */
+}
+.welcome h1{
+    color: white;
+    font-size: 80px;
+    font-family: Roboto, Arial;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    /* transition: all 0.7s ease-in-out; */
+    font-size: clamp(52px, 5vw, 80px);
+}
+.welcome{
+    /* display: inline-flexbox; */
+    align-items: center;
+    justify-content: center;
+}
+.welcome h3{
+    color: #515151;
+    /* font-size: 25px; */
+    font-family: Roboto, Arial;
+    font-weight: 500;
+    text-align: center;
+    padding: 4px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -25px;
+    font-size: clamp(12px, 5vw, 25px);
+    
+}
+.arrow{
+    height: 20px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    background-color: #36454F;
+    margin-left: -4px;
+    margin-top: -1px;
+}
+/* .down{
+    align-items: center;
+    display:flex ;
+    font-size: 16px;
+    padding: 10px 10px 10px 14px;
+    gap: 8px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    background-color: #36454F;
+    border: none;
+
+}
+.btn{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    
+}
+.down span{
+    background-color: #36454F;
+    color: #1B9BF8;
+    
+}
+.down:hover {
+    box-shadow: 0 0 5px #1B9BF8, 0 0 25px
+    #1B9BF8, 0 0 50px #1B9BF8, 0 0 100px #1B9BF8, 0 0 200px #1B9BF8;
+    transition: all 0.7s ease-in-out;  
+    transform: translatey(10px);
+}  */
+
+.btn{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+.installer {
+    width: 150px;
+    height: 40px;
+  }
+  
+  .installer label {
+    position: absolute;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .installer label input {
+    display: none;
+  }
+  
+  .installer label span {
+    position: absolute;
+    height: 40px;
+    width: 150px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background: #3F8EFC;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: sans-serif;
+  }
+  .installer label span:hover{
+    height: 40px;
+    width: 170px;
+    transition: all 0.7s ease-in-out;  
+  }
+  .installer label:hover{
+    height: 40px;
+    width: 170px;
+    transition: all 0.7s ease-in-out;  
+  }
+  .installer:hover{
+    width: 170px;
+    height: 40px;
+    transition: all 0.7s ease-in-out;  
+  }
+  
+  .installer label input:checked ~ span {
+    background: #87E544;
+    animation: downloadSuccess 3.1s ease;
+  }
+  
+  .installer label span:after {
+    content: 'Download CV';
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 10%;
+  }
+  
+  .installer label input:checked ~ span:after {
+    content: 'Thank you!';
+    animation: downloadState 3s;
+  }
+  
+  .installer label span:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    background: rgba(255,255,255,.2);
+  }
+  
+  .installer label input:checked ~ span:before {
+    animation: downloadProgress 3s cubic-bezier(.67,.13,.1,.81);
+  }
+  
+  @keyframes downloadSuccess {
+    0%, 90% {
+      background: #3F8EFC;
+    }
+  
+    100% {
+      background: #87E544;
+    }
+  }
+  
+  @keyframes downloadState {
+    0%, 75% {
+      content: 'Downloading...'
+    }
+  
+    100% {
+      content: 'Download!'
+    }
+  }
+  
+  @keyframes downloadProgress {
+    0% {
+      width: 5%;
+      opacity: 1;
+    }
+  
+    35% {
+      width: 17%;
+    }
+  
+    64% {
+      width: 51%;
+    }
+  
+    81% {
+      width: 70%;
+    }
+  
+    90% {
+      width: 86%;
+      opacity: 1;
+    }
+  
+    100% {
+      width: 100%;
+      opacity: 0;
+    }
+  }
+
+
+/* ............. ............About ....................................  */
+#abt{
+    height: clamp(19px, 5vw, 26px);
+    width: clamp(19px, 5vw, 26px);
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    display: flexbox;
+} 
+.img2{
+    background-color: #1B9BF8;
+    height: clamp(32px, 5vw, 38px);
+    width: clamp(32px, 5vw, 38px);
+    border-radius: 10px;
+    border: 9px solid #1B9BF8;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+}
+.about{
+    margin-left: 8px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+}
+.my h1{
+    color: white;
+    display: flexbox;
+    font-family: Roboto, Arial;
+    font-size: 50px;
+    font-size: clamp(34px, 4vw, 50px);
+    font-weight: 500;
+    text-align: center;
+    margin-left: 8px;
+}
+.my{
+    display: inline-flex;
+}
+.skills{
+    justify-content: flex-end;
+    align-items: flex;
+    display: inline-flex;
+    margin-top: 220px;
+    margin-bottom: 20px;
+    margin-left: clamp(4px, 4vw, 54px);
+}
+
+
+
+      /*    .............  About 
+                  ................   Girl  message .............      */
+
+.yooy{
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+}
+.message{
+    background-color: #333333;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    padding: 4px 10px 4px 10px;
+    margin-left: clamp(20px, 4vw, 70px);
+    margin-right: clamp(20px, 4vw, 70px);
+}
+.msg1{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 20px;
+    max-width: 85%;
+}
+.gm11{
+    width: min(800px, 90%);
+} 
+.gm11 p{
+    color: white;
+    text-align: end;
+    height: 100%;
+    overflow-y: auto;
+
+    justify-content: flex-end;
+    font-size: clamp(14px, 2vw, 28px);
+    margin-right: 4px;
+    background-color: #1B9BF8;
+    font-family:  Roboto, Arial;
+    padding-left: clamp(6px, 4vw, 25px);
+    padding-right: clamp(6px, 4vw, 16px);
+    padding-top: clamp(6px, 4vw, 10px);
+    padding-bottom: clamp(6px, 4vw, 10px);
+    border-radius: 25px 25px 0 25px;
+}
+.gm1{
+    justify-content: flex-end;
+    display: inline-flex;
+    align-self: last baseline;
+}
+
+.gm1 img{
+    width: clamp(24px, 7vw, 46px);
+    height: clamp(24px, 7vw, 46px);
+} 
+
+/* ......................   boy  message  .....  */
+
+.messagea{
+    background-color: #333333;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    padding: 4px 10px 4px 10px;
+    margin-left: clamp(20px, 4vw, 70px);
+    margin-right: clamp(20px, 4vw, 70px);
+}
+.msg1a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 85%;
+    margin-right: 20px;
+}
+.gm11a{
+    width: min(800px, 90%);
+}
+.gm11a p{
+    color: white;
+    text-align: start;
+    height: 100%;
+    overflow-y: auto;
+
+    justify-content: flex-start;
+    font-size: clamp(14px, 2vw, 28px);
+    margin-left: 4px;
+    background: #434343;
+    font-family:  Roboto, Arial;
+    padding-left: clamp(6px, 4vw, 16px);
+    padding-right: clamp(6px, 4vw, 25px);
+    padding-top: clamp(6px, 4vw, 10px);
+    padding-bottom: clamp(6px, 4vw, 10px);
+    border-radius: 25px 25px 25px 0;
+}
+.gm11a p a{
+    color: #1B9BF8;
+    text-decoration: none;
+}
+.gm1a{
+    justify-content: flex-start;
+    display: inline-flex;
+    align-self: last baseline;
+}
+.gm1a img{
+    width: clamp(24px, 7vw, 46px);
+    height: clamp(24px, 7vw, 46px);
+}
+
+
+
+/*          ......................    timeline ............*/
+.tab-titles{
+	color: white;
+	display: flex;
+    height: 100%;
+	margin:200px 0 0px 0;
+    /* margin-left: clamp(10px, 6vw, 80px); */
+	align-items: center;
+	justify-content: center;
+    font-family: sans-serif;
+    gap: clamp(20px, 6vw, 45px);
+}
+.tab-links img{
+    width: clamp(20px, 4vw, 36px);
+    height: clamp(20px, 4vw, 36px);
+    /* border-radius: 4px; */
+    /* padding-top: 4px; */
+    filter: brightness(0) invert(1) contrast(1);
+}
+.tab-links{
+	font-size: clamp(22px, 4vw, 36px);
+	font-weight: 500;
+	cursor: pointer;
+	position: relative;
+} 
+.tab-links::after{
+	content: '';
+	width: 0;
+	height: 3px;
+	background: #ff004f;
+	position: absolute;
+	left: 0;
+	bottom: -8px;
+	transition: 0.5s;
+}
+.tab-links.active-link::after{
+	width: 60%;
+}
+
+.tab-contents{
+    display: none;
+    padding: 0 2px 0 2px;
+}
+.tab-contents.active-tab{
+	display: block;
+}
+
+
+
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.contain{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+}
+
+.text-box{
+    color: white;
+    padding: 20px 30px;
+    background: #434343;
+    position: relative;
+    border-radius: 15px;
+    font-size: 21px;
+    /* overflow: hidden; */
+}
+.text-box p span{
+    color: #1B9BF8;
+}
+.left-container{
+    left: 0;
+}
+.right-container{
+    left: 50%;
+}
+.contain img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+.right-container img{
+    left: -20px;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 1;
+    margin-top: 50px;
+    animation: moveline 4s linear forwards;
+}
+
+@keyframes moveline {
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 74%;
+    }
+}
+
+.text-box h2{
+    font-weight: 600;
+    overflow: hidden;
+}
+.text-box small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #434343;
+    right: -15px;
+}
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #434343;
+    left: -15px;
+}
+
+@media screen and (max-width: 600px) {
+    .timeline{
+        margin: 50px auto;
+    }
+    .timeline::after{
+        left: 31px;
+    }
+    .contain{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .text-box{
+        font-size: 15px;
+    }
+    .text-box small{
+        margin-bottom: 10px;
+    }
+    .right-container{
+        left: 0;
+    }
+    .left-container img, .right-container img{
+        left: 10px;
+    }
+    .left-container-arrow, .right-container-arrow{
+        border-right: 15px solid #434343;
+        border-left: 0;
+        left: -15px;
+    }
+}
+
+
+.sed{
+    background: #333333;
+    border-radius: 10px;
+}
+.bordersed{
+    padding-right: clamp(1px, 4vw, 40px);
+    padding-left: clamp(1px, 4vw, 40px);
+}
+
+
+
+
+
+
+
+/*....................  form message .................*/
+
+.contact-right form{
+    max-width: 500px;
+    height: 100%;
+    background: #333333;
+    padding-top: clamp(0px, 4vw, 14px);
+    padding-bottom: clamp(10px, 4vw, 18px);
+    padding-right: clamp(10px, 4vw, 18px);
+    padding-left: clamp(10px, 4vw, 18px);
+    border-radius: 18px;
+}
+.formss{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #434343;
+    padding: 12px;
+    margin: 5px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-weight: 400;
+} 
+::placeholder{
+    color: white;
+}
+form .btnn2{
+    width: 100%;
+    font-size: 18px;
+    margin-top: 12px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    background: #fff;
+}
+.bulbb img{
+    width: 30px;
+    height: 34px;
+    display: inline-flex;
+    align-items: start;
+    justify-items: center;  
+    padding-bottom: 4px;
+}
+.bulbb{
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+}
+
+
+.button-loader{
+    display: flex;
+    gap: 0.25rem;
+}
+.button-loader > div{
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: black;
+    border-radius: 50%;
+    animation: 1.2s infinite ease-in-out scaleUp;
+}
+.button-loader div:nth-child(1){
+    animation-delay: -0.32s;
+}
+.button-loader div:nth-child(2){
+    animation-delay: -0.16s;
+}
+@keyframes scaleUp {
+    0%, 80%, 100% {
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(1);
+    }
+}
+.btnn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 2.5rem;
+    border: none;
+}
+.button-loader{
+    display: none;
+}
+.btnn2.loading .button-text{
+    display: none;
+}
+.btnn2.loading .button-loader{
+    display: flex;
+}
+/* .btnn2.success {
+    background: red;
+} */
+.btnn2.loading{
+    cursor: wait;
+}
+
+
+/*...........................   Contact information  ............*/
+
+.contact-info img{
+    width: clamp(36px, 5vw, 45px);
+    height: clamp(36px, 5vw, 45px);
+}
+.contact-info h1{
+    display: inline-flex;
+    color: white;
+    font-family: sans-serif;
+    font-size: clamp(35px, 5vw, 50px);
+    font-weight: 500;
+    padding-left: 4px;
+}
+.contact-info{
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+}
+.con{
+    padding-top: clamp(3px, 4vw, 10px);
+    padding-bottom: clamp(3px, 4vw, 10px);
+    padding-left: clamp(10px, 4vw, 30px);
+    padding-right: clamp(10px, 4vw, 30px);
+}
+.telephone img{
+    width: clamp(23px, 4vw, 24px);
+    height: clamp(23px, 4vw, 24px);
+}
+.telephone h2{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: clamp(18px, 4vw, 22px);
+}
+.telephone{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 6px;
+    padding: 8px;
+    flex: 1 0 200px;
+}
+.telephone a{
+    text-decoration: none;
+    color: white;
+    /* display: flex; */
+}
+.conta{
+    background: #323232;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 6px 12px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 15px;
+} 
+
+/*........................footer .................*/
+
+footer p{
+    font-family: sans-serif;
+    font-size: clamp(6px, 4vw, 14px);
+    font-weight: 500;
+    color: white;
+    /* align-items: center;
+    justify-content: center; */
+}
+footer{
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
