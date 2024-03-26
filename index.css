@@ -1,12 +1,15 @@
 *{
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* background-color: #282828; */
 }
 html,body{
     line-height: 1.4;
     font-weight: normal;
-    background-color: #282828;;
+    background-color: #282828;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .image img{
@@ -26,7 +29,6 @@ html,body{
     align-items: center;
     justify-content: center;
     padding: 180px 100px 0 100px;
-    /* margin-top: 220px; */
 }
 .welcome h1{
     color: white;
@@ -39,16 +41,14 @@ html,body{
     justify-content: center;
     background: transparent;
     /* transition: all 0.7s ease-in-out; */
-    font-size: clamp(52px, 5vw, 80px);
+    font-size: clamp(42px, 8vw, 80px);
 }
 .welcome{
-    /* display: inline-flexbox; */
     align-items: center;
     justify-content: center;
 }
 .welcome h3{
     color: #515151;
-    /* font-size: 25px; */
     font-family: Roboto, Arial;
     font-weight: 500;
     text-align: center;
@@ -56,7 +56,7 @@ html,body{
     align-items: center;
     justify-content: center;
     margin-top: -25px;
-    font-size: clamp(12px, 5vw, 25px);
+    font-size: clamp(12px, 4vw, 30px);
     
 }
 .arrow{
@@ -69,37 +69,6 @@ html,body{
     margin-left: -4px;
     margin-top: -1px;
 }
-/* .down{
-    align-items: center;
-    display:flex ;
-    font-size: 16px;
-    padding: 10px 10px 10px 14px;
-    gap: 8px;
-    font-weight: bold;
-    color: white;
-    border-radius: 10px;
-    background-color: #36454F;
-    border: none;
-
-}
-.btn{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-top: 20px;
-    
-}
-.down span{
-    background-color: #36454F;
-    color: #1B9BF8;
-    
-}
-.down:hover {
-    box-shadow: 0 0 5px #1B9BF8, 0 0 25px
-    #1B9BF8, 0 0 50px #1B9BF8, 0 0 100px #1B9BF8, 0 0 200px #1B9BF8;
-    transition: all 0.7s ease-in-out;  
-    transform: translatey(10px);
-}  */
 
 .btn{
     align-items: center;
@@ -290,19 +259,14 @@ html,body{
       /*    .............  About 
                   ................   Girl  message .............      */
 
-.yooy{
-    width: 100%;
-    height: 100%;
-    /* background: red; */
-}
 .message{
     background-color: #333333;
     display: flex;
     justify-content: flex-end;
     align-items: end;
     padding: 4px 10px 4px 10px;
-    margin-left: clamp(20px, 4vw, 70px);
-    margin-right: clamp(20px, 4vw, 70px);
+    margin-left: clamp(10px, 4vw, 70px);
+    margin-right: clamp(10px, 4vw, 70px);
 }
 .msg1{
     display: inline-flex;
@@ -350,8 +314,8 @@ html,body{
     justify-content: flex-start;
     align-items: end;
     padding: 4px 10px 4px 10px;
-    margin-left: clamp(20px, 4vw, 70px);
-    margin-right: clamp(20px, 4vw, 70px);
+    margin-left: clamp(10px, 4vw, 70px);
+    margin-right: clamp(10px, 4vw, 70px);
 }
 .msg1a{
     display: inline-flex;
@@ -397,29 +361,39 @@ html,body{
 
 
 /*          ......................    timeline ............*/
+@media screen and (max-width: 480px) {
+    .tab-titles{
+        width: 350px; 
+    }
+}
+.tabb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px 0 15px;
+}
 .tab-titles{
 	color: white;
 	display: flex;
     height: 100%;
 	margin:200px 0 0px 0;
-    /* margin-left: clamp(10px, 6vw, 80px); */
-	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
     font-family: sans-serif;
-    gap: clamp(20px, 6vw, 45px);
-}
+    gap: clamp(10px, 6vw, 45px);
+} 
 .tab-links img{
-    width: clamp(20px, 4vw, 36px);
-    height: clamp(20px, 4vw, 36px);
-    /* border-radius: 4px; */
-    /* padding-top: 4px; */
+    width: clamp(17px, 4vw, 36px);
+    height: clamp(17px, 4vw, 36px);
     filter: brightness(0) invert(1) contrast(1);
 }
 .tab-links{
-	font-size: clamp(22px, 4vw, 36px);
+	font-size: clamp(18px, 4vw, 36px);
 	font-weight: 500;
 	cursor: pointer;
 	position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 } 
 .tab-links::after{
 	content: '';
@@ -577,12 +551,45 @@ html,body{
 .sed{
     background: #333333;
     border-radius: 10px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.bigcontainer{
+    justify-content: center;
+    align-items: center;
 }
 .bordersed{
-    padding-right: clamp(1px, 4vw, 40px);
-    padding-left: clamp(1px, 4vw, 40px);
+    padding: 10px;
 }
-
+@media screen and (min-width: 540px) {
+    .bordersed{
+        padding: 0 40px 0 20px;
+    }
+    .yooy{
+        margin-right: 18px;
+    }
+    .messagea .okok{
+        padding-left: 7px;
+    }
+    .con{
+        margin-right: 12px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .bordersed{
+        padding: 0 80px 0 60px;
+    }
+    .yooy{
+        margin-right: 20px;
+    }
+    .messagea .okok{
+        padding-left: 7px;
+    }
+    .con{
+        margin-right: 0px;
+    }
+}
 
 
 
@@ -690,9 +697,7 @@ form .btnn2{
 .btnn2.loading .button-loader{
     display: flex;
 }
-/* .btnn2.success {
-    background: red;
-} */
+
 .btnn2.loading{
     cursor: wait;
 }
@@ -717,11 +722,13 @@ form .btnn2{
     justify-content: center;
     display: inline-flex;
 }
+
 .con{
     padding-top: clamp(3px, 4vw, 10px);
     padding-bottom: clamp(3px, 4vw, 10px);
     padding-left: clamp(10px, 4vw, 30px);
-    padding-right: clamp(10px, 4vw, 30px);
+    padding-right: clamp(10px, 4vw, 50px);
+    margin-bottom: 10px;
 }
 .telephone img{
     width: clamp(23px, 4vw, 24px);
@@ -744,7 +751,6 @@ form .btnn2{
 .telephone a{
     text-decoration: none;
     color: white;
-    /* display: flex; */
 }
 .conta{
     background: #323232;
@@ -763,11 +769,8 @@ footer p{
     font-size: clamp(6px, 4vw, 14px);
     font-weight: 500;
     color: white;
-    /* align-items: center;
-    justify-content: center; */
 }
 footer{
-    /* background: red; */
     display: flex;
     align-items: center;
     justify-content: center;
