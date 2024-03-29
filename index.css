@@ -369,6 +369,17 @@ html,body{
     height: clamp(24px, 7vw, 46px);
 }
 
+.nono{
+    background: url(images/d.png);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* min-height: 100%; */
+    min-width: auto;
+    border-radius: 10px;
+}
 
 
 /*          ......................    timeline ............*/
@@ -465,7 +476,7 @@ html,body{
 .text-box{
     color: white;
     padding: 20px 30px;
-    background: #434343;
+    background: #333333;
     position: relative;
     border-radius: 15px;
     font-size: 21px;
@@ -495,7 +506,7 @@ html,body{
     position: absolute;
     width: 6px;
     height: 100%;
-    background: #434343;
+    background: #333333;
     top: 0;
     left: 50%;
     margin-left: -3px;
@@ -529,7 +540,7 @@ html,body{
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-left: 15px solid #434343;
+    border-left: 15px solid #333333;
     right: -15px;
 }
 .right-container-arrow{
@@ -540,7 +551,7 @@ html,body{
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-right: 15px solid #434343;
+    border-right: 15px solid #333333;
     left: -15px;
 }
 
@@ -569,28 +580,11 @@ html,body{
         left: 10px;
     }
     .left-container-arrow, .right-container-arrow{
-        border-right: 15px solid #434343;
+        border-right: 15px solid #333333;
         border-left: 0;
         left: -15px;
     }
 }
-
-
-/* .sed{
-    background: #333333;
-    border-radius: 10px;
-    display: block;
-    justify-content: center;
-    align-items: center;
-
-    background: url(images/b.png);
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100%;
-} */
 
 #skills{
     background: url(images/c.jpeg);
@@ -664,19 +658,6 @@ html,body{
         margin-right: 0px;
     }
 }
-
-.nono{
-    background: url(images/d.png);
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    /* min-height: 100%; */
-    min-width: auto;
-    border-radius: 10px;
-}
-
 
 
 
