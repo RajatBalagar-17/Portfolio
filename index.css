@@ -271,7 +271,7 @@ html,body{
                   ................   Girl  message .............      */
 
 .message{
-    background-color: #333333;
+    /* background-color: #333333; */
     display: flex;
     justify-content: flex-end;
     align-items: end;
@@ -320,7 +320,7 @@ html,body{
 /* ......................   boy  message  .....  */
 
 .messagea{
-    background-color: #333333;
+    /* background-color: #333333; */
     display: flex;
     justify-content: flex-start;
     align-items: end;
@@ -465,7 +465,7 @@ html,body{
 .text-box{
     color: white;
     padding: 20px 30px;
-    background: #434343;
+    background: #777777;
     position: relative;
     border-radius: 15px;
     font-size: 21px;
@@ -495,7 +495,7 @@ html,body{
     position: absolute;
     width: 6px;
     height: 100%;
-    background: #fff;
+    background: #777777;
     top: 0;
     left: 50%;
     margin-left: -3px;
@@ -529,7 +529,7 @@ html,body{
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-left: 15px solid #434343;
+    border-left: 15px solid #777777;
     right: -15px;
 }
 .right-container-arrow{
@@ -540,7 +540,7 @@ html,body{
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-right: 15px solid #434343;
+    border-right: 15px solid #777777;
     left: -15px;
 }
 
@@ -569,20 +569,66 @@ html,body{
         left: 10px;
     }
     .left-container-arrow, .right-container-arrow{
-        border-right: 15px solid #434343;
+        border-right: 15px solid #777777;
         border-left: 0;
         left: -15px;
     }
 }
 
 
-.sed{
+/* .sed{
     background: #333333;
     border-radius: 10px;
     display: block;
     justify-content: center;
     align-items: center;
+
+    background: url(images/b.png);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100%;
+} */
+
+#skills{
+    background: url(images/c.jpeg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100%;
+
+    border-radius: 10px;
+    /* display: block;
+    justify-content: center;
+    align-items: center; */
 }
+#experince{
+    background: url(images/d.png);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100%;
+
+    border-radius: 10px;
+}
+#education{
+    background: url(images/e.png);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100%;
+
+    border-radius: 10px;
+}
+
 .bigcontainer{
     justify-content: center;
     align-items: center;
@@ -619,7 +665,17 @@ html,body{
     }
 }
 
-
+.nono{
+    background: url(images/d.png);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* min-height: 100%; */
+    min-width: auto;
+    border-radius: 10px;
+}
 
 
 
@@ -884,7 +940,7 @@ footer{
 }
 .work:hover .layer{
     height: 100%;
-    padding: 4px;
+    padding: clamp(4px, 2vw, 20px);
 }
 
 .project-icon img{
