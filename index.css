@@ -841,8 +841,8 @@ footer{
     transition: transform 0.5s;
 }
 .layer img{
-    height: 20px;
-    margin-top: clamp(0px, 4vw, 15px);
+    height: clamp(14px, 2vw, 20px);
+    margin-top: clamp(2px, 3vw, 15px);
 }
 .layer{
     width: 100%;
@@ -874,8 +874,8 @@ footer{
     font-size: 18px;
     line-height: 60px;
     background: white;
-    width: clamp(50px, 2vw, 60px);
-    height: clamp(50px, 2vw, 60px);
+    width: clamp(40px, 2vw, 60px);
+    height: clamp(39px, 2vw, 60px);
     text-align: center;
     border-radius: 50%;
 }
