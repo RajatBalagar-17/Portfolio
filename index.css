@@ -627,13 +627,13 @@ html,body{
     justify-content: center;
     align-items: center;
 }
-.bordersed{
+/* .bordersed{
     padding: 10px;
-}
+} */
 @media screen and (min-width: 540px) {
-    .bordersed{
+    /* .bordersed{
         padding: 0 20px 0 20px;
-    }
+    } */
     .yooy{
         margin-right: 18px;
     }
@@ -645,9 +645,9 @@ html,body{
     }
 }
 @media screen and (min-width: 768px) {
-    .bordersed{
+    /* .bordersed{
         padding: 0 75px 0 60px;
-    }
+    } */
     .yooy{
         margin-right: 20px;
     }
